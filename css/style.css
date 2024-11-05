@@ -1,0 +1,1010 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* outline: auto; */
+}
+
+body{
+    background-color: #ffff;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.vanish{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*styling header*/
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0,.6);
+    box-shadow:0px 0px 10px rgba(223, 223, 223, 0.37);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.company-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: gold;
+    margin: 0 2rem 0 1.5rem;
+}
+
+.profile-icon{
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/user_icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 4.4rem;
+    cursor: pointer;
+}
+
+/* styling navbar*/
+#navbar{
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-elements{
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+#navbar li{
+    font-size: 1.2rem;
+    margin-right: 2.5rem;
+    color: white;
+}
+
+/* styling hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/car_image.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.hero-title{ 
+    position: fixed;
+    color: gold;
+    font-size: 5rem;
+    top: 50%;
+    left:2% ;
+    z-index: 3;
+}
+
+
+#about-us{
+    width: 100%;
+    margin-bottom: 1.6rem;    
+    background-color: black;
+    padding: 20px 0 ;
+    margin-top: 25px;
+}
+
+.company-image{
+    width: 60%;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 0 50px 50px 0;
+}
+.company-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 50px 50px 0;
+}
+
+.about-us-text{
+    width: 100%;
+    text-align: center;
+    padding: 0 3.2rem 0 3.2rem;
+    line-height: 30px;
+    color: white;
+    margin-top: 3.2rem;
+}
+.about-us-text p{
+    margin-top: 2.2rem;
+    font-style: italic;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.about-us-text h2{
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 5rem;
+    font-weight: 900;
+}
+
+
+.car-company-logo{
+    width: 100%;
+    height: 16.25rem;
+    padding-top: 1.25rem;
+    color: Gold;
+    background-color: rgb(54, 54, 54);
+    margin-bottom: 1.5rem;
+}
+
+.car-company-logo h2{
+    width: 100px;
+    /* border: 1px solid; */
+    font-size: 2rem;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.logos{
+    width: 75%;
+    height: 7.5rem;
+    margin:auto;
+    margin-top: 1.2rem;
+    align-items: center;
+    overflow-x: hidden;
+    box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.1);
+}
+
+
+
+.logo-image{
+    width: 5.25rem;
+    height: 5.25rem; 
+    margin-left: 1.2rem;
+}
+
+
+
+.logo-image img{
+    width: 5.25rem;
+    height: 5.25rem;
+    
+}
+
+
+.right-button i,
+.left-button i{
+    font-size: 2rem;
+    margin-left: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+
+
+#car-collection{
+    width: 100%;
+    margin-top: 1.7rem;
+    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    background-color: rgb(54, 54, 54);
+}
+
+#car-collection h2{
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+}
+
+.cars{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    justify-content: center;
+    gap: .9rem;
+}
+
+.car-card{
+    padding: 0.625rem;
+    background-color: rgb(255, 253, 119);
+    border-radius: .9rem;
+}
+
+.car-image{
+    height: 18.7rem;
+    border-radius: .625rem;
+}
+.car-image img{
+    width: 100%;
+    height: 18.75rem;
+    border-radius: .625rem;
+}
+
+.car-details{
+    padding-top: .9rem;
+    font-style: italic;
+}
+
+.car-name{
+    height: 60px;
+    /* border: 1px solid; */
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.price{
+    font-size: 1.12rem;
+    font-weight: 550;
+    margin-top: .9rem;
+}
+
+.price span,
+.model span,
+.exterior-color span,
+.milage span,
+.condition span{    
+    font-weight: normal;
+}
+
+.spec-row-two{
+    margin-left: 5rem;
+}
+
+.model span,
+.exterior-color span,
+.milage span,
+.condition span{
+    font-size: 1.12rem;
+}
+
+.model,
+.exterior-color,
+.milage,
+.condition{
+    font-size: 1.25rem;
+    font-weight: 550;
+    margin: .6rem 0 .6rem 0;
+}
+
+.view-details{
+    margin: .9rem 0 .6rem 0;
+}
+
+.view-details-button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.12rem;
+    cursor: pointer;
+}
+
+.view-details-button span{
+    font-size: 1.25rem;
+    margin-left: .6rem;
+}
+
+.view-more-portion{
+    border: 1px solid white;
+    width:15.6rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1.8rem;
+    padding: 5px;
+    font-style: italic;
+}
+
+
+
+/* Testimonials*/
+#testimonials{
+    position: relative;
+    width: 100%;
+    padding: 1.8rem 1.25rem 1.8rem 1.25rem;
+    background-image: url("/images/testimonial_background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#testimonials h2{
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.testimonial_container{
+    position: relative;
+    width: 45rem; 
+    padding: .6rem;
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.testimonial_card_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 26rem; 
+    overflow: hidden;
+    justify-content: center;
+    padding-left: 5.6rem;
+}
+
+
+.testimonial_card{
+    width: 18rem;
+    height: 25rem;
+    border: 1px solid white;
+    background-color: orange;
+    overflow: hidden;
+    padding: .6rem;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.1);
+    position: absolute;
+    transform: translate(-50%,-1%) scale(.1);
+    z-index: 0;
+    transition: all .2s linear;
+}
+
+.profile_image{
+    width: 100%;
+    height: 8.1rem;
+    border: 1px solid white;
+    background-color: wheat;
+    place-items: center;    
+}
+
+.user_name{
+    color: white;
+    font-size: 2.1rem;
+    margin-top: .6rem;
+}
+
+.profile_image img{
+    display: block;
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.user_review{
+    margin-top: 1.25rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.main-item{
+    transform: translate(-20%, 1%) scale(1);   
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.left-item{
+    transform: translate(-80%,-1%) scale(.9);
+    z-index: 1;
+}
+
+.right-item{
+    transform: translate(50%,-1%) scale(.9);
+    z-index: 1;
+}
+
+.cursor_buttons_container{
+    position: relative;
+    display: flex;
+    width: 11rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel__btns {
+    position: absolute;
+    transform: translate(-50%, 22rem);
+    display: flex;
+    gap: 2rem;
+}
+.carousel__btn {
+    background-color: orangered;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border:1px solid currentColor;
+    color: #fff;
+    cursor: pointer;
+}
+.carousel__btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.carousel__btn:hover {
+    color: #aaa;
+}
+
+/* mobile */
+.navbarMobile{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    top: 5rem;
+}
+
+.navbar-element-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+}
+
+.toggle-button{
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    place-content: center;
+    font-size: 20px;
+    margin-left: 20px;
+    background: linear-gradient(red, white);
+}
+
+.show {
+    display: block;
+}
+#footer{
+    width: 100%;
+    background-color: #151515;
+    color: white;
+    padding-top: 30px;
+}
+
+#contact-section{
+    display: flex;
+    color:white;
+    padding-left: 25px;
+}
+
+#contact-section h3{
+    font-size: 23px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.headings-section-one{
+    width: 60%;
+    font-style: italic;
+    margin-left: 60px;
+}
+
+.headings-section-two{
+    width: 40%;
+    font-style: italic;
+}
+
+.footer-logo{
+    width: 58%;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+.footer-heading{
+    width: 100px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.company-detail-section{
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 40px;
+}
+
+
+.address{
+    width: 70%;
+    height: 230px;
+}
+
+#contact-section li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.location{
+    font-size: 20px;
+}
+
+.location span{
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 550;
+}
+
+
+
+.address li:not(.location, .email, .phone, .instagram, .linkedin, .youtube){
+    margin-left: 30px;
+    font-size: 1rem;
+    font-style: normal;
+    color: gray;
+}
+
+.email a,
+.phone a{
+    margin-left: 15px;
+    color: gray;
+}
+
+.email a:hover,
+.phone a:hover,
+.brands a:hover,
+.quick-links a:hover,
+.company-details a:hover{
+    color:white;
+}
+
+.instagram,
+.linkedin,
+.youtube{
+    font-size: 25px;
+    margin-top: 20px;
+    float:left;
+    margin-right: 20px;
+}
+
+.brands a,
+.quick-links a,
+.company-details a{
+    color: gray;
+}
+
+
+
+@media screen and (max-width: 400px){
+    .headings-section-two{
+        padding: 0;
+    }
+    .company-detail-section{
+        grid-template-columns: repeat(auto-fit, 140px);
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .headings-section-two{
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    *{
+        /* outline: auto; */
+    }
+
+    .car-company-logo{
+        height: 11.25rem;
+    }
+
+    .car-company-logo h2{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        /* border: 1px solid; */
+    }
+
+    .logos{
+        width: 90%;
+        height: 5.5rem;
+        /* border: 1px solid white;  */
+        box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.1);
+        /* margin-top: .4rem; */
+        align-items: center;
+        overflow-x: scroll;
+    }
+    
+
+    .logo-image{
+        width: 4.25rem;
+        height: 4.25rem; 
+        /* border: 1px solid #ffffff; */
+        margin-left: 1rem;
+    }
+    
+    .logo-image img{
+        width: 4.25rem;
+        height: 4.25rem;
+    }
+
+    .right-button,
+    .left-button{
+        display: none;
+    }
+
+    
+
+    #header{
+        display: flex;
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+    .company-name{
+        font-size: 1.5rem;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .profile-icon{
+        width: 40px;
+        height: 40px;
+        order: 3;
+        margin-right: 10px;
+    }
+
+    .toggle-button{
+        display: block;
+    }
+
+    .toggle-button:hover ~ #navbar {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .hero{
+        max-width: 100%;
+        height: 100vh;
+        background-image: url("/images/showroom_image.jpeg");
+        background-size: fit-content;
+        background-repeat: no-repeat;
+    
+    }
+
+    .hero-title{
+        width: 80%;
+        position: relative;
+        font-size: 2.5rem;
+    }
+
+    .company-image{
+        display: none;
+    }
+
+    #about-us h2{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .about-us-text{
+        margin-top: 0;
+        padding: 0 20px;
+        
+    }
+    
+    .about-us-text p{
+        margin-top: 25px;
+        padding: 0;
+        
+    }
+    
+
+
+
+    #testimonials{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("/images/testimonial_background.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #testimonials h2{
+        color: white;
+        font-size: 2rem;
+        font-style: italic;
+    }
+    
+    .testimonial_container{
+        position: relative;
+        width: 18rem; 
+        overflow: hidden;
+    }
+    
+    .testimonial_card_container{
+        position: relative;
+        display: flex;
+        width: 17rem;
+        height: 26rem; 
+        overflow: hidden;
+        justify-content: center;
+        z-index: 0;
+    }
+    
+    
+    .testimonial_card{
+        width: 15rem;
+        height: 25rem;
+        border: 1px solid white;
+        background-color: orange;
+        overflow: hidden;
+        padding: .6rem;
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.1);
+        position: absolute;
+        transform: translate(-140%, 2%) scale(1);
+        z-index: -1;
+        transition: all .2s linear;
+        
+    }
+
+    .main-item{
+        transform: translate(-18%, 2%) scale(1);
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    
+    .left-item{
+        transform: translate(-80%,-1%) scale(.9);
+        z-index: 1;
+        visibility: hidden;
+    }
+    
+    .right-item{
+        transform: translate(50%,-1%) scale(.9);
+        z-index: 1;
+        visibility: hidden;  
+    }
+    
+    .cursor_buttons_container{
+        position: relative;
+        display: flex;
+        width: 11rem;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .carousel__btns {
+        position: absolute;
+        transform: translate(-50%, 22rem);
+        display: flex;
+        gap: 2rem;
+        border: 1px solid white;
+    }
+
+    .carousel__btn {
+        background-color: orangered;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border:1px solid currentColor;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .carousel__btn svg {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    
+    .carousel__btn:hover {
+        color: #aaa;
+    }
+
+    #contact-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    
+    .footer-heading{
+        flex-wrap: wrap;
+    } 
+
+    .company-detail-section{
+        justify-content: space-evenly;
+    }
+
+    .headings-section-one{
+        width: 80%;
+        order: 2;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+    .headings-section-two{
+        width: 100%;
+    }
+    
+    .address{
+        width: 100%;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    *{
+        /* outline: auto; */
+    }
+    #navbar{
+        display: none;
+    }
+    .company-name{
+        font-size: 20px;
+        margin: 0;
+    }
+    .toggle-button{
+        display: block;
+        order: -1;
+    }
+    .navbar-element-mobile{
+        position: absolute;
+        top: -1rem;
+    }
+
+    .car-company-logo{
+        height: 13.25rem;
+    }
+
+    .logos{
+        width: 70%;
+        height: 6.5rem;
+        margin:auto;
+        margin-top: .4rem;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+
+    .logo-image{
+        width: 5.25rem;
+        height: 5.25rem; 
+        margin-left: 1.2rem;
+    }
+    
+    .logo-image img{
+        width: 5.25rem;
+        height: 5.25rem;
+        
+    }
+
+    .right-button{
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        left: 235px;
+        place-content: center;
+    }
+    
+    .right-button i,
+    .left-button i{
+        font-size: 2rem;
+        margin-left: 10px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    
+    .logos:hover{
+        i{
+            visibility: visible;
+        }
+    }
+    
+    
+    .left-button{
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        right: 235px;
+        place-content: center;   
+    }
+    
+    .about-us-text{
+        margin-top: 10px;
+    }
+    .about-us-text h2{
+        margin-top: 55px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    #contact-section{
+        flex-direction: column;
+    }
+
+    .headings-section-one{
+        order: 2;
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .headings-section-two{
+        width: 100%;
+    }
+    .company-detail-section{
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (min-width: 850px) and (max-width: 950px) {
+
+    .headings-section-one{
+        margin: 0px 0 0 0px;
+    }
+    .address{
+        width: 100%;
+    }
+
+    .headings-section-two{
+        width: 100%;
+    }
+    .company-detail-section{
+        grid-template-columns: repeat(auto-fit, 100px);
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (min-width: 950px) and (max-width: 1030px){
+    
+
+    .headings-section-one{
+        margin: 0px 0 0 0px;
+    }
+    .address{
+        width: 100%;
+    }
+
+    .headings-section-two{
+        width: 100%;
+    }
+
+    .company-detail-section{
+        grid-template-columns: repeat(auto-fit, 100px);
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1031px) {
+    .headings-section-one{
+
+        margin: 0;
+    }
+
+    .headings-section-two{
+        width: 55%
+    }
+
+    .company-detail-section{
+        grid-template-columns: repeat(auto-fit, 130px);
+        justify-content: space-around;
+    }
+
+}
+    
+  
