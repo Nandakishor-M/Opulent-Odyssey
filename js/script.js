@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+// hello
 
 const logoImages = document.querySelectorAll('.logo-image');
 const screenWidth = window.innerWidth;
