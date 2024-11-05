@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opulent Odyssey</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper class -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- flaticon css -->
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+<body>
+    <main id="main">
+
+        <!-- header section -->
+        <header id="header" class="d-flex">
+            <h3 class="company-name">Opulent Odyssey</h3>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav id="navbar">
+                <ul class="navbar-elements d-flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#car-collection">Buy a Car</a></li>
+                    <li><a href="#">Sell your Car</a></li>
+                    <li><a href="#contact-section">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="profile-icon"> 
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <section class="hero">
+            <p class="hero-title">Opulent Odyssey</p> 
+        </section>
+
+        <!-- logo portion start -->
+        <section class="car-company-logo swiper">
+            <h2>Brands</h2>
+            <div class="logos d-flex swiper-wrapper">
+                <!-- <div class="right-button" type="button" id="rightLogoBtn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+                <div class="left-button" type="button" id="leftLogoBtn">
+                    <i class="fa-solid fa-angles-right"></i>
+                </div> -->
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/audi-cars-logo.png" alt="audi logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/benz-cars-logo.png" alt="benz logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/bmw-cars-logo.png" alt="bmw logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/jaugur-cars-logo.png" alt="jaugur logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/lamborgini-cars-logo.png" alt="lamborghini logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/bentley-car-logo.png" alt="landrover logos" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/aston-martin-logo.png" alt="lexus logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/mini-cooper-cars-logo.png" alt="mini cooper logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide">
+                    <a href="#"><img src="/public/images/porsche-cars-logo.png" alt="porsche logo" srcset=""></a>
+                </div>
+                <div class="logo-image swiper-slide ">
+                    <a href="#"><img src="/public/images/rolls-royce-cars-logo.png" alt="rolls royce logo" srcset=""></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <div class="swiper-scrollbar"></div>
+        </section>
+        <!-- logo portion end -->
+
+
+        <!-- car collection portion start -->
+        <section id="car-collection">
+            <h2>Our Car Collection</h2>
+            <div class="cars d-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/public/images/rolls-royce-cullinan.jpeg" alt="Rolls Royce Cullinan" srcset="">
+                    </div>
+                    <div class="car-details">
+                        <p class="car-name">2022 ROLLSROYCE CULLINAN BLACK BADGE</p>
+                        <p class="price">₹3.5CR<span>(inc.GST)</span></p>
+                        <div class="car-spec d-flex">
+                            <d class="spec-row-one">
+                                <p class="model">Model Year<br><span>2022</span></p>
+                                <p class="exterior-color">Exterior Color<br><span>Black</span></p>
+                            </d>
+                            <d class="spec-row-two">
+                                <p class="milage">Milage(KM)<br><span>6.6(KM/L)</span></p>
+                                <p class="condition">Condition<br><span>1st Owner</span></p>
+                            </d>
+                        </div>
+                        <div class="view-details">
+                            <a href="#"><button class="view-details-button">View Details<span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/public/images/bmw-X5-xdrive401.jpg" alt="BMW X5 xDrive40i" srcset="">
+                    </div>
+                    <div class="car-details">
+                        <p class="car-name">BMW X5 xDrive40i M Sport</p>
+                        <p class="price">₹88L<span>(inc.GST)</span></p>
+                        <div class="car-spec d-flex">
+                            <d class="spec-row-one">
+                                <p class="model">Model Year<br><span>2022</span></p>
+                                <p class="exterior-color">Exterior Color<br><span>Black</span></p>
+                            </d>
+                            <d class="spec-row-two">
+                                <p class="milage">Milage(KM)<br><span>12(KM/L)</span></p>
+                                <p class="condition">Condition<br><span>1st Owner</span></p>
+                            </d>
+                        </div>
+                        <div class="view-details">
+                            <a href="#"><button class="view-details-button">View Details<span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/public/images/audi-q5-40tdi.jpeg" alt="Audi Q5 40tdi" srcset="">
+                    </div>
+                    <div class="car-details">
+                        <p class="car-name">Audi Q5 40 TDI Technology</p>
+                        <p class="price">₹50L<span>(inc.GST)</span></p>
+                        <div class="car-spec d-flex">
+                            <d class="spec-row-one">
+                                <p class="model">Model Year<br><span>2019</span></p>
+                                <p class="exterior-color">Exterior Color<br><span>Black</span></p>
+                            </d>
+                            <d class="spec-row-two">
+                                <p class="milage">Milage(KM)<br><span>--</span></p>
+                                <p class="condition">Condition<br><span>1st Owner</span></p>
+                            </d>
+                        </div>
+                        <div class="view-details">
+                            <a href="#"><button class="view-details-button">View Details<span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="/public/images/lamborghini-gallardo-spyder.jpeg" alt="Lamborghini Gallardo Spyder" srcset="">
+                    </div>
+                    <div class="car-details">
+                        <p class="car-name">Lamborghini Gallardo Spyder</p>
+                        <p class="price">₹95L<span>(inc.GST)</span></p>
+                        <div class="car-spec d-flex">
+                            <d class="spec-row-one">
+                                <p class="model">Model Year<br><span>2019</span></p>
+                                <p class="exterior-color">Exterior Color<br><span>Black</span></p>
+                            </d>
+                            <d class="spec-row-two">
+                                <p class="milage">Milage(KM)<br><span>5(KM/L)</span></p>
+                                <p class="condition">Condition<br><span>Pre-owned</span></p>
+                            </d>
+                        </div>
+                        <div class="view-details">
+                            <a href="#"><button class="view-details-button">View Details<span><i class="fa-solid fa-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#"><div class="view-more-portion">
+                <p>View More</p>
+            </div></a>
+        </section>
+        <!-- car collection portion end -->
+
+        <!-- about us  -->
+        <section id="about-us" class="d-flex">
+            <div class="company-image">
+                <img src="/public/images/company_image.jpeg" alt="" srcset="">
+            </div>
+            <div class="about-us-text">
+                <h2>About Us</h2>
+                <p>Opulent Odyssey is your premier destination for pre-owned luxury vehicles. With a curated selection of meticulously maintained cars, we offer an unparalleled blend of luxury, performance, and value. Our dedicated team of automotive experts is committed to providing exceptional customer service and ensuring a seamless car-buying experience.</p>
+            </div>
+        </section>
+        <!-- about us end    -->
+
+        <!-- testimonial start-->
+
+        <section id="testimonials">
+            <h2>Testimonial</h2>
+            <div class="testimonial_container">
+                <div class="testimonial_card_container">
+                    <div class="testimonial_card left-item">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_one.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card main-item">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_two.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card right-item">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_three.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_four.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_five.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_one.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial_card">
+                        <div class="profile_image">
+                            <img src="/public/images/users_profile/user_one.jpeg" alt="" srcset="">
+                            <p class="user_name">Jessica</p>
+                        </div>
+                        <div class="user_review">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi recusandae iusto consectetur quas nulla quam esse. Rerum, totam labore odit beatae eius at minus atque qui, facere quasi, adipisci esse?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor_buttons_container">
+                    <div class="cursor_buttons">
+                        <button class="carousel__btn" id="leftBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z"/></svg></button>
+                        <button class="carousel__btn" id="rightBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></svg></button>
+                    </div>  
+                </div>
+            </div>
+              
+        </section>
+        <!-- testimonial end -->
+
+        <!-- contact section -->
+        <footer id="footer">
+            <p class="footer-logo">Opulent Odyssey</p>
+            <section id="contact-section">
+                <div class="headings-section-one">
+                    <div class="company-details-section">
+                        <div class="address">   
+                            <li class="location"><i class="fa-solid fa-location-dot"></i><span>Office</span></li>
+                            <li>Plot No 41, Golf Course Road, Saraswati Kunj, Sector 53,<br> Gurugram, Haryana, 122002</li>
+                            <li class="email"><i class="fa-solid fa-envelope"></i><a href="#">opulentOdyssey@gmail.com</a></li>
+                            <li class="phone"><i class="fa-solid fa-phone-volume"></i><a href="#">9999999999</a></li>
+                            <li class="instagram"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></i></li>
+                            <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </div>
+                    </div>       
+                </div>
+                <div class="headings-section-two">
+                    <!-- <div class="footer-heading-section d-flex"></div> -->
+                    <div class="company-detail-section d-grid">
+                        <div class="brands">
+                            <p class="footer-heading">Brands</p>
+                            <ul>
+                                <li><a href="#">Mercedes Benz</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">Audi</a></li>
+                                <li><a href="#">Jaugur</a></li>
+                                <li><a href="#">Lamborghini</a></li>
+                                <li><a href="#">Bentley</a></li>
+                                <li><a href="#">Aston Martin</a></li>
+                                <li><a href="#">Mini Cooper</a></li>
+                                <li><a href="#">Porsche</a></li>
+                                <li><a href="#">Rolls Royce</a></li>
+                            </ul>
+                        </div>
+                        <div class="quick-links">
+                            <p class="footer-heading">Quick Links</p>
+                            <ul>
+                                <li><a href="#">Sell</a></li>
+                                <li><a href="#">Extended Warranty</a></li>
+                                <li><a href="#">Insurance</a></li>
+                                <li><a href="#">Loans</a></li>
+                                <li><a href="#">Luxury Cart Assurance</a></li>
+                                <li><a href="#">Luxury Cart Buyback</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Car Care</a></li>
+                                <li><a href="#">Service Packages</a></li>
+                            </ul>
+                        </div>
+                        <div class="company-details">
+                            <p class="footer-heading ">Company</p>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+       
+                    
+        <!-- contact section end -->
+    </main> 
+
+
+    <!-- custom js -->
+    <script src="/public/js/script.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
