@@ -306,7 +306,7 @@ a{
 
 
 
-/* Testimonials*/
+/* Testimonials section styles*/
 #testimonials{
     position: relative;
     width: 100%;
@@ -704,9 +704,6 @@ a{
         padding: 0;
         
     }
-    
-
-
 
     #testimonials{
         position: relative;
