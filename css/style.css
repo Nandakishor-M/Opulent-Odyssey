@@ -157,7 +157,7 @@ a{
 }
 
 .logos{
-    width: 75%;
+    width: 66%;
     height: 7.5rem;
     margin:auto;
     margin-top: 1.2rem;
@@ -672,7 +672,7 @@ a{
     .hero{
         max-width: 100%;
         height: 100vh;
-        background-image: url("https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg");
+        background-image: url("https://files.idyllic.app/files/static/2525139?width=640&optimizer=image");
         background-size: fit-content;
         background-repeat: no-repeat;
     
