@@ -672,7 +672,7 @@ a{
     .hero{
         max-width: 100%;
         height: 100vh;
-        background-image: url("/images/showroom_image.jpeg");
+        background-image: url("https://skcarlounge.in/wp-content/uploads/2021/02/WhatsApp-Image-2020-12-28-at-10.58.13-AM.jpg");
         background-size: fit-content;
         background-repeat: no-repeat;
     
@@ -712,7 +712,7 @@ a{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url("/images/testimonial_background.jpeg");
+        background-image: url("https://img.freepik.com/premium-photo/luxury-car-showroom-with-highend-vehicles-gleaming-bright-showroom-lights_1154909-1493.jpg?w=1060");
         background-size: cover;
         background-repeat: no-repeat;
     }
