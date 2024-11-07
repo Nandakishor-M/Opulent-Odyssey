@@ -680,7 +680,7 @@ a{
 
     .hero-title{
         width: 80%;
-        position: relative;
+        position: fixed;
         font-size: 2.5rem;
     }
 
@@ -727,6 +727,7 @@ a{
         position: relative;
         width: 18rem; 
         overflow: hidden;
+        margin: 1.2rem auto;
     }
     
     .testimonial_card_container{
@@ -737,6 +738,7 @@ a{
         overflow: hidden;
         justify-content: center;
         z-index: 0;
+        /* margin-top: -20px; */
     }
     
     

@@ -18,33 +18,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// hello
+
+
 
 const logoImages = document.querySelectorAll('.logo-image');
 const screenWidth = window.innerWidth;
 
-console.log(screenWidth);
-
-logoImages.forEach(logoImage => {
-    logoImage.addEventListener('mouseover', () => {
-        logoImages.forEach(img => {
-            img.style.animationPlayState = 'paused';
-        });
+if(screenWidth <= 760){
+    window.addEventListener('scroll', () => {
+        const heroTitle = document.querySelector('.hero-title');
+        const scrollThreshold = 300; // Adjust this value to control the scroll distance
+      
+        if (window.scrollY >= scrollThreshold) {
+          heroTitle.classList.add('vanish');
+        } else {
+          heroTitle.classList.remove('vanish');
+        }
     });
-
-    logoImage.addEventListener('wheel', () => {
-        logoImages.forEach(img => {
-            img.style.animationPlayState = 'running';
-        });
-    });
-
-    logoImage.addEventListener('mouseout', () => {
-        logoImages.forEach(img => {
-            img.style.animationPlayState = 'running';
-        });
-    });
-});
-
+}
 
 
 
@@ -152,3 +143,5 @@ leftBtn.addEventListener('click', function() {
 
 
 
+
+// window width: 720px down
